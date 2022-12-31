@@ -8,6 +8,8 @@ import { BsTelephone } from "react-icons/bs";
 import { FiMail } from "react-icons/fi";
 import "../CSS/Footer.css";
 import React from "react";
+import {ABOUTUS, HOME} from '../router'
+import { Link } from "react-router-dom";
 
 const Footer = () => {
   const handleClick = () => {
@@ -32,7 +34,7 @@ const Footer = () => {
             </div>
             <div className="menu">
               <h1 className="textmenu">Our Service</h1>
-              <li>Beranda</li>
+              <Link className="link" to={HOME}><li>Beranda</li></Link>
               <li>Artikel</li>
               <li>Komunitas</li>
               <li>Aksi</li>
@@ -40,7 +42,7 @@ const Footer = () => {
             <div className="menu">
               <h1 className="textmenu">Organization</h1>
               <li>Contact Us</li>
-              <li>About Us</li>
+              <Link className="link" to={ABOUTUS}><li>About Us</li></Link>
               <li>Terms & Conditions</li>
               <li>FAQ</li>
               <li>Privacy Policy</li>

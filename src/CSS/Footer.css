@@ -2,7 +2,7 @@
     border-radius: solid;
     background-color: #2B4754;
     color: white;
-    height: auto;
+    height: 332px;
     display: flex;
     flex-direction: row;
     align-items: flex-start;
@@ -31,6 +31,7 @@
     justify-content: flex-start;
     padding: 0px;
     gap: 80px;
+    max-width: 100%;
 }
 .top-logo{
     display: flex;
@@ -38,7 +39,7 @@
     align-items: flex-start;
     padding: 0px;
     gap: 10px;
-    width: 25%;
+    width: 30%;
 }
 .textmenghadirkan {
     font-family: 'Poppins';
@@ -56,9 +57,8 @@
     align-items: flex-start;
     padding: 0px;
     gap: 10px;
-    width: 15%;
+    max-width: 30%;
     height: auto;
-    
 }
 
 .textmenu {
@@ -67,7 +67,6 @@
     font-weight: 600;
     font-size: 18px;
     width: 100%;
-    height: 30px;
     margin: 10px 0px 0px 0px;
     
 }
@@ -143,13 +142,10 @@ li{
 }
 
 .textcopyright {
-    width: 361px;
-    height: 24px;
     font-family: 'Poppins';
     font-style: normal;
     font-weight: 500;
     font-size: 12px;
-    line-height: 149.5%;
 }
 
 .posisiiconsosmedfooter {
@@ -179,24 +175,67 @@ li{
     align-items: center;
     width: 100%;
 }
+.link{
+    color: white;
+    text-decoration: none;
+}
 
-@media (max-width: 768px){
-    .top-main{
-    flex-direction: column;
-    align-items: flex-start;
-    gap: 10px;
-    }
-}
-@media(max-width:768px) {
-    .textmenu{
-        width: 200px;
-    }
-}
 @media(max-width:  768px){
     .lingkaranfooter{
         bottom: 0px;
     }
+    .position-halo{
+        height: auto;
+    }
+    .textmenu{
+        width: 200px;
+    }
+    .top-main{
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 10px;
+        }
 }
+
+
+@media(max-width: 425px){
+    .menu, .textneed{
+        font-size: 14px;
+    }
+    .textmenghadirkan{
+        font-size: 10px;
+        width: 100%;
+    }
+    li, .detailhelp{
+        font-size: 12px;
+    }
+    .textcopyright{
+        font-size: 8px;
+       }
+    .buttontop{
+        margin-left: -20px;
+    }
+    .detailhelp, .detailhelp{
+        width: 200px;
+    }
+    .posisineedhelp{
+        width: 200px;
+    }
+    .menubottom{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    li{
+        width: 200px;
+    }
+    .maincontent{
+        display: flex;
+        gap: 20px;
+    }
+}
+
 /* .image-18 {
     position: absolute;
     width: 200px;
